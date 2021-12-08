@@ -1,0 +1,32 @@
+{
+  "name": "gtmhub-plugin-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:server": "nodemon --watch server.js --exec node server.js",
+    "start": "concurrently -k -n server,webpack,ngrok -c magenta,cyan,aqua \"npm run watch:server\" \"npm run webpack\" \"npm run ngrok\"",
+    "ngrok": "node ngrok.js",
+    "webpack": "webpack --watch"
+  },
+  "dependencies": {
+    "@gtmhub/sdk": "^1.0.34",
+    "concurrently": "^6.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "webpack": "^5.62.1",
+    "webpack-cli": "^4.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://iliahanev@bitbucket.org/gtmhub/gtmhub-plugin-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/gtmhub/gtmhub-plugin-demo#readme",
+  "devDependencies": {
+    "ngrok": "^4.2.2",
+    "nodemon": "^2.0.15"
+  }
+}
