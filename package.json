@@ -26,6 +26,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/gtmhub/gtmhub-plugin-demo#readme",
   "devDependencies": {
+    "mkcert": "^1.5.1",
     "ngrok": "^4.2.2",
     "nodemon": "^2.0.15"
   }
