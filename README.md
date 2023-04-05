@@ -24,4 +24,6 @@ npm start
 
 ## Access it in browser?
 
-Open your favourite browser and visit https://localplugins.com:5000
+Open your favourite browser and visit https://localplugins.com:5000/hello-world
+
+If you get a warning "Your connection is not private" you can ignore it and click "Proceed to localplugins.com (unsafe)". The reason here is that the temporary SSL certificate that we're creating is not trusted by the browser, but is needed to establish SSL connection when the plugin is embeded into our page.
