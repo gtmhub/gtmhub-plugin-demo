@@ -24,4 +24,4 @@ npm start
 
 ## Access it in browser?
 
-Open your favourite browser and visit http://localhost:5000
+Open your favourite browser and visit https://localplugins.com:5000

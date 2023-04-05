@@ -45,6 +45,6 @@ async function createHttpsServer() {
   // Instantiate HTTPS server
   let server = https.createServer(httpOptions, app);
   
-  server.listen(port, () => console.log(`Listening on http://localhost:${port}/hello-world`));
+  server.listen(port, () => console.log(`Listening on https://localplugins.com:${port}`));
 }
 

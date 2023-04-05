@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:server": "nodemon --watch server.js --exec node server.js",
-    "start": "concurrently -k -n server,webpack,ngrok -c magenta,cyan,aqua \"npm run watch:server\" \"npm run webpack\" \"npm run ngrok\"",
-    "ngrok": "node ngrok.js",
+    "start": "concurrently -k -n server,webpack -c magenta,cyan,aqua \"npm run watch:server\" \"npm run webpack\"",
     "webpack": "webpack --watch"
   },
   "dependencies": {
@@ -27,7 +26,6 @@
   "homepage": "https://bitbucket.org/gtmhub/gtmhub-plugin-demo#readme",
   "devDependencies": {
     "mkcert": "^1.5.1",
-    "ngrok": "^4.2.2",
     "nodemon": "^2.0.15"
   }
 }
